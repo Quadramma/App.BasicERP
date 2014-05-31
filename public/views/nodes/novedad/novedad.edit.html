@@ -1,0 +1,54 @@
+<div class="ui fluid form">
+
+    <div class="field">
+        <div class="ui menu">
+            <div class="item">
+                <a ng-click="trysave()" class="ui small blue button">Editar</a>
+                <a ng-click="delete()" class="ui small blue button">Eliminar</a>
+                <a ng-click="subAbmCancel()" class="ui small blue button">Cancelar</a>
+            </div>
+        </div>
+    </div>
+    <div class="ui error message"></div>
+
+
+
+    <div class="field">
+        <label for="codigo">Codigo Interno</label>
+        <input DISABLED id="codigo" type="text" ng-model="item.NovedadID" />
+    </div>
+    <div class="ui two fields">
+        <div class="field">
+            <label for="codigo">Contacto</label>
+            <input DISABLED type="text" ng-model="item.EmpresaRazonSocial" />
+        </div>
+        <div class="field">
+            <label for="codigo">Contacto Asunto</label>
+            <input DISABLED type="text" ng-model="item.ContactoAsunto" />
+        </div>
+    </div>
+
+    <div class="two fields">
+        <div class="field">
+            <label>Asunto *</label>
+            <input name="Asunto" type="text" ng-model="item.Asunto" placeholder="Asunto" />
+        </div>
+
+        <div class="field">
+            <label>Fecha *</label>
+            <div class='input-group date' id='Fecha' data-date-format="DD/MM/YYYY">
+                <input type='text' class="form-control" name="Fecha" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="field">
+        <label>Observación *</label>
+        <textarea name="Observacion" ng-model="item.Observacion" placeholder="Escriba una observación"></textarea>
+    </div>
+
+</div>

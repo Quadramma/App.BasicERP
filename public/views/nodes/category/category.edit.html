@@ -1,0 +1,17 @@
+<h1>Edicion categoria de producto</h1>
+<div class="ui segment">
+    <div class="ui fluid form">
+        <div class="fields">
+            <div class="field">
+                <label for="description">Descripcion</label>
+                <input id="description" name="description" type="text" ng-model="item.description" />
+            </div>
+        </div>
+        <div class="ui error message"></div>
+    </div>
+</div>
+<div class="ui segment">
+    <a ui-sref="ga.category.items" ng-click="validateAndSave()" class="ui small black button">Editar</a>
+    <a  ng-click="trydelete()" class="ui small black button">Eliminar</a>
+    <a ui-sref="ga.category.items" class="ui small black button">Cancelar</a>
+</div>

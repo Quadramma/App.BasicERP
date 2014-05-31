@@ -1,0 +1,13 @@
+
+
+.ga.home.bg{
+	background:url(../img/ga/home_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+height: 400px;
+}
+
+.ga.header{
+	padding: 2%;
+}

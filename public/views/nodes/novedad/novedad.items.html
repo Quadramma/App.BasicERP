@@ -1,0 +1,26 @@
+<div class="ui menu">
+    <div class="item">
+        <a class="ui small blue button" ui-sref="clarity.novedad.create({ContactoID:item.ContactoID})">Nuevo</a>
+    </div>
+</div>
+<table class="ui sortable compact table segment">
+    <thead>
+        <tr>
+            <th>Asunto</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in novedades" ui-sref="clarity.novedad.edit({id:item.NovedadID})">
+            <td>{{item.Asunto}}</td>
+             <td>{{item.Fecha}}</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">
+                {{novedades.length}} leidos
+            </th>
+        </tr>
+    </tfoot>
+</table>

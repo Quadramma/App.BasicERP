@@ -1,0 +1,25 @@
+<div class="ui fluid vertical menu" ng-controller="ClarityPageController">
+    <div class="item clarity login box">
+        <div class="ui fluid form">
+            <div class="field">
+                <label>Usuario</label>
+                <input type="text" name="loginname" placeholder="Usuario" ng-model="data.loginname">
+            </div>
+            <div class="field">
+                <label>Contraseña</label>
+                <input type="text" name="password"  pattern="*" placeholder="Contraseña" ng-model="data.password">
+            </div>
+
+            <div class="field">
+                <a ng-click="trylogin();" class="ui small blue button">
+                	Ingresar
+                </a>
+            </div>
+
+            <div class="ui error message"></div>
+        </div>
+    </div>
+    <div class="item clarity login box">
+    	<div ui-view="logo"></div>
+    </div>
+</div>

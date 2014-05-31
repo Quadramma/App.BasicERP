@@ -1,0 +1,35 @@
+<div class="ui form">
+
+    <div class="field">
+        <div class="ui  menu">
+            <div class="item">
+                <a class="ui small blue button" ui-sref="clarity.tema.create">Nuevo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="field">
+        <table class="ui sortable compact table segment">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items" ui-sref="clarity.tema.edit({id:item.TemaID})">
+                    <td>{{item.TemaID}}</td>
+                    <td>{{item.Descripcion}}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">
+                        {{items.length}} leidos
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

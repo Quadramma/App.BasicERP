@@ -1,0 +1,35 @@
+
+
+
+/*LOGIN*/
+.clarity.login.box{
+	max-width: 240px;
+	margin: 50px auto 0 auto;
+}
+
+img.clarity.logo  {
+	width: 59px;
+	height: 60px;
+	background: white;
+}
+
+.ui.form input.slk_code{
+	width:100px;
+}
+
+
+
+div.clarity.main.grid {
+	margin-top: 20px;
+}
+
+div.ui.large.menu .item {
+font-size: 1.525rem;
+}
+
+
+@media (min-width: 1200px) {
+	div.menu.sidebar a.item.cerrar{
+		display: none;
+	}
+}

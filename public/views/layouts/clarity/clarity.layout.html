@@ -1,0 +1,40 @@
+
+<div class="clarity page" ng-controller="ClarityPageController">
+    <div ui-view="tree"></div>
+    <div ui-view="header"></div>
+
+    <div class="clarity main ui fluid vertical menu">
+        <div class="item">
+            <div ui-view></div>     <!-- main view -->
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+<div id="selectkeyModal" class="nms ui selectkey modal" ng-controller="SelectKeyController">
+    <i class="close icon"></i>
+    <div class="header">
+        Title
+    </div>
+    <div class="content">
+        <table class="ui sortable compact table segment">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td>{{item.RazonSocial}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="actions">
+        <div class="ui button">Cancelar</div>
+    </div>
+</div>
+-->

@@ -1,0 +1,26 @@
+<div class="ui fluid form">
+
+    <div class="field">
+        <div class="ui menu">
+            <div class="item">
+                <a ng-click="trysave()" class="ui small blue button">Editar</a>
+                <a ng-click="delete()" class="ui small blue button">Eliminar</a>
+                <a ui-sref="clarity.tema.list" class="ui small blue button">Cancelar</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="ui two fields">
+        <div class="field">
+            <label for="codigo">Codigo Interno</label>
+            <input DISABLED id="codigo" type="text" ng-model="item.TemaID" />
+        </div>
+
+        <div class="field">
+            <label for="description">Descripcion</label>
+            <input id="description" type="text" ng-model="item.Descripcion" />
+        </div>
+    </div>
+</div>

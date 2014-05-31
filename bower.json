@@ -1,0 +1,12 @@
+{
+    "name": "NMS_Bower",
+    "version": "1.0.0",
+    "main": "",
+    "dependencies": {
+        "angular": "latest",
+        "angular-resource": "latest",
+        "underscore": "latest",
+        "semantic": "latest",
+        "angular-ui-router": "latest"
+    }
+}

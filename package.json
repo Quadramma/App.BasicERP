@@ -1,0 +1,10 @@
+{
+  "name"         : "App.Clarity",
+  "version"      : "0.0.1",
+  "description"  : "",
+  "main"         : "",
+  "author"       : "JLA",
+  "dependencies" : {
+      "express": "3.0.3"
+    }
+  }

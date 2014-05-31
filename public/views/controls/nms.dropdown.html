@@ -1,0 +1,9 @@
+<label>NMS Dropdown</label>
+<div id="nmsDropdown" ng-click="nmsDropdownClick();" class="ga empresa dropdown ui selection dropdown " tabindex="0">
+    <input type="hidden" name="category">
+    <div class="default text">Filtro de empresa . . .</div>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+        <div ng-repeat="item in empresas" class="item" data-value="{{item.EmpresaID}}">{{item.RazonSocial}}</div>
+    </div>
+</div>

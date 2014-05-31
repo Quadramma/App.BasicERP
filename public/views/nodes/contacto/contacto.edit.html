@@ -1,0 +1,95 @@
+<div class="ui form">
+
+
+    <div class="field">
+        <div class="ui menu">
+            <div class="item">
+                <a ng-click="save()" class="ui small blue  button">Guardar</a>
+                <a ng-click="delete()" class="ui small blue  button">Eliminar</a>
+                <a ui-sref="clarity.contacto.list" class="ui small blue  button">Cancelar</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="ui error message"></div>
+
+    <div class="ui four fields">
+        <div class="field">
+            <label>Codigo Interno</label>
+            <input DISABLED type="text" ng-model="item.ContactoID" />
+        </div>
+        <div class="field">
+        </div>
+        <div class="field">
+        </div>
+        <div class="field">
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+            <label>Asunto</label>
+            <input id="asunto" placeholder="Asunto" name="asunto" type="text" ng-model="item.Asunto" />
+        </div>
+        <div class="field">
+            <label>Tema</label>
+            <div id="temaDropdown" ng-click="temaDropdownClick();" class="clarity tema dropdown ui selection dropdown " tabindex="0">
+                <input type="hidden" value="" name="temaDropdown">
+                <div class="default text">Seleccione un tema</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div ng-repeat="tema in temas" class="item" data-value="{{tema.TemaID}}">{{tema.Descripcion}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <label>Proxima Accion</label>
+        <input placeholder="Proxima Accion" name="proximaccion" type="text" ng-model="item.ProximaAccion" />
+    </div>
+    <div class="ui three fields">
+        <div class="field">
+            <label>Estado</label>
+            <div id="estadoContactoDropdown" ng-click="estadoContactoDropdownClick();" class="clarity estadocontacto  ui  dropdown selection" tabindex="0">
+                <input type="hidden" value="">
+                <div class="default text">Seleccione un estado</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div ng-repeat="estado in estados" class="item" data-value="{{estado.EstadoContactoID}}">{{estado.Descripcion}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>Sub-Estado</label>
+            <div id="estadoContactoDropdown" ng-click="estadoContactoDropdownClick();" class="clarity estadocontacto  ui  dropdown selection" tabindex="0">
+                <input type="hidden" value="" name="estadoContactoDropdown">
+                <div class="default text">Ninguno</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>Fecha de agenda</label>
+            <div class='input-group date' id='fechaAgenda' data-date-format="DD/MM/YYYY">
+                <input type='text' class="form-control" name="fechaAgenda" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+ 
+      
+  
+    <div class="field">
+        <label>Novedades</label>
+        <div ui-view="novedades"></div>
+    </div>
+
+
+</div>

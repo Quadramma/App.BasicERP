@@ -1,0 +1,22 @@
+
+
+body{
+	overflow: hidden;
+}
+
+.nms.header img{
+	width: 256px;
+	height: 60px;
+}
+
+
+.nms.left.ui.vertical.sidebar{
+	background: skyblue;
+}
+
+.ui.bottom.sidebar, .ui.top.sidebar {
+
+
+
+
+}
