@@ -15,6 +15,10 @@ angular.module('NMSAppModule', [
 	//ALWAYS START LOGGED FALSE
 	$rootScope.logged = false;
 
+	$.getJSON('settings.json', function(data) {
+    	console.log(data);
+	});
+
 })
 
 .controller('NMSPageController', function($scope, $NMSConfig) {

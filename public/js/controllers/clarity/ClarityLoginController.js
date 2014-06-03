@@ -1,11 +1,11 @@
 angular.module('ClarityLoginModule', [
-	"NMSAuthModule"
+	"NMSAuthModule",
 ])
 
 
 .controller('ClarityLoginController', function(
 
-	$scope, $ClarityLogin, $state, $timeout) {
+	$scope, $ClarityLogin, $state, $timeout, $ERPApi) {
 	console.info("[ClarityLoginController]");
 	$scope.data = {
 		loginname: "",
@@ -27,6 +27,17 @@ angular.module('ClarityLoginModule', [
 			$(".ui.error.message").toggle(false);
 		}, 5000);
 
+	}
+
+
+	$scope.testapi = function() {
+		$ERPApi.test({}, function(data) {
+			console.log("TEST API OK");
+			console.log(data);
+		}, function(data) {
+			console.log("TEST API FAIL");
+			console.log(data);
+		})
 	}
 
 	$scope.trylogin = function() {
@@ -91,7 +102,7 @@ angular.module('ClarityLoginModule', [
 					if (res.ok == true) {
 						console.info("[ClarityLogin][Success]");
 
-						
+
 						$NMSLocalSession.setData(res.data);
 						$NMSAuth.setToken(res.token);
 						$NMSAuth.setLogged(true, res.token);
@@ -110,5 +121,21 @@ angular.module('ClarityLoginModule', [
 				})
 			}
 		}
+	}
+])
+
+
+.factory('$ERPApi', [
+	'$resource', '$rootScope',
+	function($resource, $rootScope) {
+
+		return $resource('api/:id', {}, {
+			test: {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded'
+				}
+			}
+		});
 	}
 ]);

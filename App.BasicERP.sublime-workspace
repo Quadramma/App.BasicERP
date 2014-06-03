@@ -3,33 +3,62 @@
 	{
 		"selected_items":
 		[
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"base",
+				"base64_decode"
+			],
+			[
+				"user",
+				"userdata"
+			],
+			[
+				"has",
+				"hasUser"
+			],
+			[
+				"EOTW_US",
+				"EOTW_USERGROUP"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"contents": " ",
-			"settings":
-			{
-				"buffer_size": 1,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 33.0,
 		"selected_items":
 		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format Code"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 392.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 139.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -43,6 +72,22 @@
 	},
 	"file_history":
 	[
+		"/home/javi/Downloads/lc000386_nms.xml",
+		"/tmp/fz3temp-1/vimoda_auth.php",
+		"/tmp/fz3temp-1/product.php",
+		"/tmp/fz3temp-1/tndb.php",
+		"/tmp/fz3temp-1/eotw_users.php",
+		"/tmp/fz3temp-1/index.php",
+		"/home/javi/Repos/App.BasicERP/public/api/index.php",
+		"/home/javi/Repos/App.BasicERP/public/api/db/tndb.php",
+		"/home/javi/Repos/App.BasicERP/outsideapp/settings.json",
+		"/home/javi/Repos/App.BasicERP/public/index.html",
+		"/home/javi/Repos/App.BasicERP/public/js/modules/main/NMSAppModule.js",
+		"/home/javi/Repos/App.BasicERP/public/views/layouts/clarity/clarity.logo.html",
+		"/home/javi/Repos/App.BasicERP/public/views/layouts/clarity/clarity.login.html",
+		"/home/javi/Repos/App.BasicERP/public/js/controllers/clarity/ClarityLoginController.js",
+		"/home/javi/Desktop/Lampp.sh",
+		"/home/javi/Repos/App.BasicERP/App.BasicERP.sublime-project",
 		"/home/javi/Repos/grunt-node-webkit-builder/prj",
 		"/home/javi/Repos/grunt-node-webkit-builder/README.md",
 		"/home/javi/Repos/grunt-node-webkit-builder/example/Gruntfile.js",
@@ -67,6 +112,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"BRAND",
+			"brand",
 			"linux"
 		],
 		"highlight": true,
@@ -75,6 +122,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"EOTW_USER"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -85,37 +133,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -125,7 +144,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -157,7 +176,7 @@
 	"project": "App.BasicERP.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
